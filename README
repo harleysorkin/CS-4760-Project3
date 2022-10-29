@@ -1,0 +1,22 @@
+Name: Harley Sorkin
+Date: 10/28/2022
+Description: CS 4760 Operating Systems, Project 3
+
+Language: C
+
+Overview:
+This program forks off a given number of child processes worker.c from oss.c, each of which accesses shared memory created by oss.c. This shared memory represents a clock, with the leading number being seconds and the latter number being nanoseconds. Each worker will attempt to increase the clock by a given amount. Enforces critical section with message queue.
+
+Invocation:
+./oss -h -n -s -m
+
+-h displays the help message and invocation instructions
+-n sets the number of workers to create
+-s sets the number of workers allowed to be execed at a time
+-m sets the number of times and the amount to increment the clock by
+
+Github:
+https://github.com/harleysorkin/CS-4760-Project3
+
+Notes:
+Program created and tested on external environment, then transfered to Hoare and retested.
